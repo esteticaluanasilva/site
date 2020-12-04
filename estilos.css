@@ -1,0 +1,187 @@
+body {
+  font-family: "Ruluko", sans-serif;
+  background: url(./imagem/fotocapa.png) no-repeat;
+  background-position: right bottom;
+  background-size: 250px 440px;
+  mix-blend-mode: normal;
+}
+
+header {
+  font-size: 20px;
+  background: rgba(247, 4, 164, 0.1);
+  padding: 2px;
+}
+
+header img {
+  width: 22%;
+  height: 12%;
+  margin: auto;
+  display: block;
+  animation: aparecer 4s;
+}
+
+/*FORMATAÇÃO PARA MENU RESPONSIVO*/
+
+label[for="botaoMenu"]{
+  padding: 5px;
+  background-color: rgba(250, 11, 131, 0.5);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size:30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+  
+}
+
+#botaoMenu {
+  display: none;
+}
+
+
+
+/*FORMATAÇÃO PARA DROPDOWN*/
+li {
+  width: 120px;
+  position: relative;
+  text-align: center;
+}
+
+
+ul li ul { /*Acrescentei o z-index: 1; e diminuí o top  */
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  display: none;
+  z-index: 1;
+  padding: 0;
+}
+
+
+
+.dropdown-menu li {
+  width: 220px;
+  margin: 10px;
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+  display: inline-block;
+  background: #fcfcfb;
+  border: solid 5px rgb(231, 6, 194);
+  border-radius: 50px;
+}
+
+nav {
+  display: flex;
+  border-top: solid white 10px;
+  list-style-type: none;
+  align-items: center;
+  animation: aparecer 4s;
+}
+
+nav ul li {
+  margin: 10px;
+  display: inline-block;
+  margin-inline-end: 120px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  background-color: rgb(230, 119, 156);
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*home PAGE*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  margin: auto;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+  animation-name: animaSlider;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.slider:nth-child(2) {
+  animation-delay: 5s;
+  
+}
+.slider:nth-child(3) {
+  animation-delay: 10s;
+}
+
+
+
+
+
+/*FORMATAÇÃO DO FOOTER*/
+
+
+footer {
+  display: flex;
+  font-size: 20px;
+  background: rgba(247, 4, 164, 0.17);
+  justify-content: space-between;
+  animation: upFooter 1s;
+  
+}
+
+footer a {
+  text-decoration: none;
+  
+}
+
+
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+#endereco {
+  margin: 20px 70px 0px 0px;
+  display: flex;
+  max-height: 100px;
+}
+
+#endereco p {
+  margin: 5px 5px 20px 10px;
+}
+
+#contato {
+  margin-left: 10px;
+}
+
+#insta {
+  display: inline-flex;
+}
+
+#wts {
+  display: inline-flex;
+}
+
+
+
