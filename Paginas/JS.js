@@ -1,5 +1,7 @@
 window.onload = function() {
 
+/* interação com o usuário página de contato */
+
     const divpergunta = document.getElementById("perguntas")
     const nome = document.getElementById("nome");
     let select = document.querySelector("select");
@@ -28,7 +30,38 @@ window.onload = function() {
     
 }
 
+
+
+/* reproduzir animação ao clicar na lista */
+
+let itensClicar = document.querySelectorAll(".clicar_surgir"); //Pegar vetor para clicar
+let procedimentos = document.querySelectorAll(".adicionarAnimacao"); // Pegar vetor com as seções
+let clicado;
+let posicaoAcesso;
+
+function adicionaAnimacao(e){
+     clicado = e.currentTarget;
+     for(let j=0; j<itensClicar.length; j++){
+         if(itensClicar[j] === clicado){
+           posicaoAcesso = j;
+        }
+    }
+     procedimentos[posicaoAcesso].classList.add("sectionprocedimento");
+
+}
+
+for(let i=0; i<itensClicar.length; i++){
+    itensClicar[i].addEventListener("click", adicionaAnimacao);
+
+}
+
+
 const botao = document.getElementById("btenviar");
 botao.onclick = duvidas;
 
+
+
+
+
 }
+

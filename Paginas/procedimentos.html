@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./estilopagina2.css"/>
-    <link rel="stylesheet" href="../animation.css" />
-    <link rel="stylesheet" href="formatocelular.css">
+    <link rel="stylesheet" href="./animation.css"/>
+    <link rel="stylesheet" href="./formatocelular.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
     <title>Estética Luana Silva</title>
@@ -18,14 +18,16 @@
 
   <body>
     <header>
-      
+      <input type="checkbox" id="botaoMenu">
+      <label for="botaoMenu">&#9776;</label>
+
       <section id="headerFlex">
-        <img id="logoAcima" src="../imagem/coroa.svg">
+        <img class="displaynone" id="logoAcima" src="../imagem/coroa.svg">
         <h1>
-          LUA<br> NA
-          <div class="vertical">SILVA</div>
+        <div  class="displaynone">LUA<br>NA</div>  
+          <div class="displaynone" id="vertical">SILVA</div>
         </h1>
-        
+     
         <nav>
           <ul>
             <li>
@@ -34,22 +36,22 @@
             
             <li class="dropdown"><a href="#procedimentosF"> Procedimentos Faciais</a>
               <ul id="procedimentosF" class="dropdown-menu">
-                <li><a id="clicksobrancelha" href="#sobrancelha">Design de sobrancelha</a></li>
-                <li><a href="#henna">Design com henna</a></li>
-                <li><a href="#detoxFacial">Detox facial</a></li>
-                <li><a href="#drenagemFacial">Drenagem linfática facial</a></li>
-                <li><a href="#limpezaPele">Limpeza de pele</a></li>
-                <li><a href="#peeling">Peeling químico</a></li>
+                <li><a href="#sobrancelha" class="clicar_surgir">Design de sobrancelha</a></li>
+                <li><a href="#henna" class="clicar_surgir">Design com henna</a></li>
+                <li><a href="#detoxFacial" class="clicar_surgir">Detox facial</a></li>
+                <li><a href="#drenagemFacial" class="clicar_surgir">Drenagem linfática facial</a></li>
+                <li><a href="#limpezaPele" class="clicar_surgir">Limpeza de pele</a></li>
+                <li><a href="#peeling" class="clicar_surgir">Peeling químico</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a href="#procedimentosC"> Procedimentos Corporais</a>
               <ul id="procedimentosC" class="dropdown-menu">
-                <li><a href="#depilação">Depilação</a></li>
-                <li><a href="#drenagem">Drenagem linfática</a></li>
-                <li><a href="#modeladora">Massagem Modeladora</a></li>
-                <li><a href="#relaxante">Massagem relaxante</a></li>
+                <li><a href="#depilação" class="clicar_surgir">Depilação</a></li>
+                <li><a href="#drenagem" class="clicar_surgir">Drenagem linfática</a></li>
+                <li><a href="#modeladora" class="clicar_surgir">Massagem Modeladora</a></li>
+                <li><a href="#relaxante" class="clicar_surgir">Massagem relaxante</a></li>
               </ul>
             </li>
 
@@ -199,7 +201,7 @@
       </svg>
     </div>
       <article>
-        <section class="sectionprocedimento" id="sobrancelha">
+        <section class="adicionarAnimacao" id="sobrancelha">
           <div class="homeTexto">
             <h2>Design de sobrancelha</h2>
             <p>
@@ -211,7 +213,7 @@
           <img src="../imagem/design1.jpeg" />
         </section>
 
-        <section class="sectionprocedimento" id="henna">
+        <section class="adicionarAnimacao" id="henna">
           <img src="../imagem/design2.jpeg" />
           <div  class="homeTexto">
             <h2>Design com Henna</h2>
@@ -223,7 +225,7 @@
           </div>
         </section>
 
-        <section class="sectionprocedimento" id="detoxFacial">
+        <section class="adicionarAnimacao" id="detoxFacial">
           <div  class="homeTexto">
             <h2>Detox facial</h2>
             <p>
@@ -236,7 +238,7 @@
           <img src="../imagem/detoxfacial.jpg" />
         </section>
 
-        <section class="sectionprocedimento" id="drenagemFacial">
+        <section class="adicionarAnimacao" id="drenagemFacial">
           <img src="../imagem/drenagem_facial.jpg" />
           <div  class="homeTexto">
             <h2>Drenagem linfática facial</h2>
@@ -249,7 +251,7 @@
           </div>
         </section>
 
-        <section class="sectionprocedimento" id="limpezaPele">
+        <section class="adicionarAnimacao" id="limpezaPele">
           <div  class="homeTexto">
             <h2>Limpeza de pele</h2>
             <p>
@@ -264,7 +266,7 @@
           <img src="../imagem/limpeza_de_pele.jpg" />
         </section>
 
-        <section class="sectionprocedimento" id="peeling">
+        <section class="adicionarAnimacao" id="peeling">
           <img src="../imagem/peeling_quimico.jpg" />
           <div  class="homeTexto">
             <h2>Peeling químico</h2>
@@ -279,7 +281,7 @@
 
         <!--  corporal -->
 
-        <section class="sectionprocedimento" id="depilação">
+        <section class="adicionarAnimacao" id="depilação">
           <div  class="homeTexto">
             <h2>Depilação</h2>
             <p>
@@ -292,7 +294,7 @@
           <img src="../imagem/depilação.jpg" />
         </section>
 
-        <section class="sectionprocedimento" id="modeladora">
+        <section class="adicionarAnimacao" id="modeladora">
           <img src="../imagem/modeladora.jpg" />
           <div  class="homeTexto">
             <h2>Massagem Modeladora</h2>
@@ -304,7 +306,7 @@
           </div>
         </section>
 
-        <section class="sectionprocedimento" id="drenagem">
+        <section class="adicionarAnimacao" id="drenagem">
           <div  class="homeTexto">
             <h2>Drenagem linfática</h2>
             <p>
@@ -317,7 +319,7 @@
           <img src="../imagem/drenagemlinf.jpg" />
         </section>
 
-        <section class="sectionprocedimento" id="relaxante">
+        <section class="adicionarAnimacao" id="relaxante">
           <img src="../imagem/massagem.jpg">
           <div  class="homeTexto">
             <h2>Massagem relaxante</h2>
@@ -364,5 +366,6 @@
         >
       </div>
     </footer>
+    <script src="./JS.js"></script>
   </body>
 </html>
