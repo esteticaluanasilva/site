@@ -200,6 +200,8 @@ form {
 #homeagenda {
   display: flex;
   animation: aparecer 4s;
+  margin-top: 50px;
+  padding: 30px;
 }
 
 main {
