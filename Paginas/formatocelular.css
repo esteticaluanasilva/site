@@ -1,4 +1,4 @@
-/*FORMATAÇÃO PARA MENU RESPONSIVO*/
+/* TENTATIVA DE FORMATAÇÃO RESPONSIVA*/
 
 @media (max-width: 600px) {
   body {
@@ -175,5 +175,19 @@
     margin-left: 90vw;
     margin-top: 100px;
     opacity: 0;
+  }
+  
+    #homeagenda {
+    display: block;
+    margin-top: 50px;
+  }
+
+  #agendeseuh {
+    margin-top: 50px;
+  }
+
+  #local {
+    width: 100vw;
+    height: 50vw;
   }
 }
